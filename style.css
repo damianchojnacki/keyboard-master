@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.leaderboard{
+  font-family: 'Source Code Pro', monospace;
+}
+
+.letter{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .3s;
+  font-size: 10rem;
+}
+
+.show{
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.hide{
+  left: 0;
+  right: 100%;
+  transform: translateX(100%);
+}
+
